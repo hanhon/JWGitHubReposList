@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appGithub="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_large">
+
+    <TextView
+        android:id="@+id/tv_repo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font20"
+        android:textStyle="bold"
+        appGithub:layout_constraintStart_toStartOf="parent"
+        appGithub:layout_constraintTop_toTopOf="parent"
+        tools:text="Jake Wharton Library" />
+
+    <TextView
+        android:id="@+id/tv_repo_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:textSize="@dimen/font14"
+        appGithub:layout_constraintStart_toStartOf="parent"
+        appGithub:layout_constraintTop_toBottomOf="@+id/tv_repo_name"
+        tools:text="Jake wharton library is an open source library to fetch github repos library" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
